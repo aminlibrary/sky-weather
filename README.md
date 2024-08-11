@@ -35,7 +35,7 @@ You can find and follow this course on - Besenior - YouTube channel.
 ### Dev Features
 * Flutter framework & Dart language
 * Bloc & Provider state management
-* Clean architector
+* Clean architecture
 * floor & getStorage database
 * DIO
 * flutter lint
