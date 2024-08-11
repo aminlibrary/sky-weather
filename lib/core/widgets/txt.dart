@@ -3,18 +3,19 @@ import 'package:flutter/material.dart';
 // ignore: camel_case_types
 class txt extends StatelessWidget {
   final String text;
-  final Color? color;
-  final String? fontFamily;
-  final FontWeight? fontWeight;
   final double? size;
+  final Color? color;
+  final FontWeight? fontWeight;
   final TextAlign? textAlign;
+  final String? fontFamily;
+
   const txt(this.text,
-      {super.key,
+      {this.size,
       this.color,
-      this.fontFamily,
       this.fontWeight,
-      this.size,
-      this.textAlign});
+      this.textAlign,
+      this.fontFamily,
+      super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +23,11 @@ class txt extends StatelessWidget {
       text,
       textAlign: textAlign,
       style: TextStyle(
-          color: color ?? Colors.white,
-          fontFamily: "poppins",
-          fontWeight: fontWeight,
-          fontSize: size),
+        fontSize: size,
+        color: color,
+        fontFamily: fontFamily ?? "poppins",
+        fontWeight: fontWeight,
+      ),
     );
   }
 }
